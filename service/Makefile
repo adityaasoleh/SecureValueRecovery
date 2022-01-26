@@ -30,9 +30,9 @@ export CARGO_HOME = $(CURDIR)/$(builddir)/cargo
 
 default: docker tar
 
-all: kbupd kbupd-config kbuptlsd
+all: kbupd kbupd-config kbuptlsd kbupd-api-client
 
-all-debug: kbupd-debug kbupd-config-debug kbuptlsd-debug
+all-debug: kbupd-debug kbupd-config-debug kbuptlsd-debug kbupd-api-client-debug
 
 kbupd:
 	$(CARGO) build --package=kbupd --bins --release
